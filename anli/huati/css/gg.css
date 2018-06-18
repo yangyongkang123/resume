@@ -1,0 +1,63 @@
+
+@charset "utf-8";
+body,ul,ol,li,dl,dd,h1,h2,h3,h4,h5,h6,p,input,textarea,select,figure{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+input,textarea,select{border: none; background-color: transparent; outline: none;}
+textarea{resize: none;}
+img{border: none;vertical-align: top;}
+a{text-decoration: none;}
+a {-webkit-tap-highlight-color:transparent;}
+html {-webkit-text-size-adjust: none;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+
+
+.clearfix:after,.clearfix:before{content: ""; display: table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom:1;}
+
+/*公共样式*/
+.gwidth{
+	width:1200px;
+	margin-left:auto;margin-right:auto;
+}
+body{
+	background:#fff;
+	font-size:12px;font-family:'微软雅黑';
+	color:#fff;
+}
+.red{
+	color:red;
+}
+.white{
+	color:#FFF;
+}
+a:hover{
+	text-shadow:1px 1px 0px #ccc;
+}
+.hui{
+	color:#B7B7B7;
+}
+
+.cheng{
+	color:#F47B00;
+
+}
+.huang{
+	color:#F4A700;
+}
+.green{
+	color:#57B144;
+}
+.lan{
+	color:#38C3F7;
+}
+.biaoti{
+	font-size:25px;line-height:25px;color:#6EB92B;
+}
+.h6_1{
+	background:url(../img/biaoti.png) no-repeat left center;
+	padding-left:23px;margin-bottom:12px;
+}

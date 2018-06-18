@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Medicine</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/mobile-util.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index_style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+<!--    登录页 -->
+	<div class="login">
+		<div class="dbzg"></div>
+		<div class="xuanze"><p class="dpib xy_tab act">普通用户</p><p class="dpib jl_tab">医生</p></div>
+		<div class="login_tabs">
+			<form action="" class="fl">
+				<p class="dpib"><span></span><input type="text" placeholder="请输入账号"></p>
+				<p class="dpib mima"><span></span><input type="text" placeholder="请输入密码"></p>
+				<p class="dpib dl"><button type="button" class="login_btn">登录</button></p>
+			</form>
+			<form action="" class="fl opc dpn">
+				<p class="dpib"><span></span><input type="text" placeholder="请输入工号"></p>
+				<p class="dpib mima"><span></span><input type="text" placeholder="请输入密码"></p>
+				<p class="dpib dl"><button type="button" class="login_btn">登录</button></p>
+				<a class="dpib wjmm" href="#">忘记密码</a>
+			</form>
+		</div>
+	</div>
+<!--	jQuery-->
+	<script>
+		// 登陆页面
+		$('.xuanze p').click(function() {
+			$(this).addClass('act').siblings().removeClass('act');
+			$('.login_tabs form').eq($(this).index()).css('display', 'block').siblings().css('display', 'none');
+		});
+	</script>
+</body>
+</html>

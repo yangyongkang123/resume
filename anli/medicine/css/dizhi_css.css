@@ -1,0 +1,18 @@
+
+html{width: 100%;height: 100%;}
+body{width: 100%;height: 100%;background: #eee;color: #393939;}
+
+.dizhixiugai{margin: .5rem auto; width: 95%;height: auto;background-color: #fff;border-radius: 5px;box-shadow: 0 0 2px rgba(0,0,0,.3);padding: .5rem 0;}
+.dizhixiugai p{font-size: .65rem;text-align: left;padding:.15rem 1.5rem .15rem .3rem;}
+.dizhixiugai p span{display: inline-block;height: 1.2rem;width: 20%;float: left;}
+.dizhixiugai p input{float: left;height: 1.2rem;padding: 0 .3rem;width: 80%;border-bottom: 1px solid #b4d4de;box-sizing: border-box;}
+.dizhixiugai .dizhi{height: auto;}
+.dizhixiugai .dizhi span{width: 20%;}
+.dizhixiugai .dizhi textarea{float: left;width: 80%;height:3.6rem;border: 1px solid #b4d4de;padding: .3rem;line-height: 1rem;border-radius: 3px;}
+h4{width: 100%;height: 1.5rem;line-height: 1.5rem;font-weight: normal;text-align: center;position: fixed;left: 0;top: 0;font-size: .65rem;color: #fff;background-color: #1E7795;}
+h4 i{width: 1.5rem;height: 100%;position: absolute;left: 0;top: 0;background: url(../img/bsfanhui.png) no-repeat center center/1rem 1rem;}
+.users_tabs_x .guanli{text-align: center;background-color: #fff; width: 100%;height: 2rem;position: fixed;left: 0;bottom: 0;padding: .3rem .5rem;box-sizing: border-box}
+.users_tabs_x .guanli span{border-radius: 1.4rem;color: #fff;line-height: 1.4rem; width: 100%;height: 100%;display: inline-block;font-size: .8rem; background-color: #1E7795;}
+
+
+

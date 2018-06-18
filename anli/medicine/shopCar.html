@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+	<script src="js/mobile-util.js"></script>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/shopCar.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+	<div class="title pr"><span class="pa dpn">取消</span><h4><i class="dpib">购物车</i></h4><em class="pa">管理</em></div>
+	<div class="shop clearfix">
+		<div class="shop_img pr">
+			<img src="img/hot_img1.jpg" alt="" class="fl">
+			<h5 class="shop_h5 fl"><i>【</i>2盒装<i>】</i>同溢堂 益安宁丸 112丸*3瓶/盒</h5>
+			<span class="dpb tl fl"><i>包邮</i></span>
+			<p class="shop_p fl">1388.00</p>
+			<div class="xuan pa"><i></i><span>删除</span></div>
+		</div>
+	</div>
+
+<!--		底部-->
+		<footer class="">
+			<div class="foot">
+				<ul class="clearfix">
+					<li class="fl  li_index "><a href="index.html"><span class="iconfont">&#xe535;</span><i >首页</i></a></li>
+					<li class="fl li_news "><a href="news.html"><span class="iconfont fwb">&#xe75e;</span><i>消息</i></a></li>
+					<li class="fl li_focus act"><a href="users.html"><span class="iconfont">&#xe606;</span><i>用户中心</i></a></li>
+				</ul>
+				<div class="zgc pa"></div>
+				<div class="gwc">
+				</div>
+				<div class="gwc_nei">
+					<a href="shopCar.html"><i class="iconfont">&#xe503;</i><span><em>0</em>件</span></a>
+				</div>
+			</div>
+
+		</footer>
+
+	<!-- 管理购物车 -->
+	<script>
+		$('.title em').click(function() {
+			$(this).text('删除');
+			$(this).click(function() {
+				if ($('.xuan i').hasClass('xuan_i_bgc')) {
+					$('.shop_img').remove();
+					$(this).text('管理');
+					$('.title span').css('display', 'none');
+				}else{}
+			});
+			$('.shop_img').addClass('width');
+			$('.shop_img img').css('marginRight', '0');
+			$('.title span').css('display', 'block');
+			$('.xuan').css('display', 'block');
+			$('.title span').click(function() {
+				$(this).css('display', 'none');
+				$('.shop_img').removeClass('width');
+				$('.shop_img img').css('marginRight', '1rem');
+				$('.xuan').css('display', 'none');
+			});
+		});
+		// 选择
+		$('.xuan i').click(function() {
+			$(this).toggleClass('xuan_i_bgc');
+		});
+		$('.xuan span').click(function() {
+			$('.shop_img').remove();
+			$('.title em').text('管理');
+			$('.title span').css('display', 'none');
+		});
+		var shop_img_l=$('.shop_img').length;
+		$('.gwc_nei span em').text(shop_img_l);
+	</script>
+</body>
+</html>

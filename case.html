@@ -4,6 +4,11 @@
         <meta charset="utf-8">
         <title>案例展示</title>
         <style>
+        body{
+            background:url(img/case2.jpg)  repeat-y  ;
+            background-size:100%;
+            overflow:hidden;
+        }
             *{
                 margin:0;padding:0;
             }
@@ -26,15 +31,21 @@
                 position:absolute;
                 bottom:0px;
                 height:20px;width:100%;
-                font-size:16px;color:#ccc;
+                font-size:16px;color:#FFF;
                 transition:0.3s;
                 text-align:center;
             }
             .case:hover{
                 transition:0.3s;
-                box-shadow:0px 0px 10px #ccc;
+                box-shadow:10px 10px 5px rgba(0, 0, 0, 0.6);
+                transform:translate(-10px, -10px);
             }.case:hover p{
                 background:rgba(0, 0, 0, 0.8);
+            }
+            .case:hover img{
+            
+                 transform:translate(0px ,30px)scale(1.2,1.2);
+                transition:0.3s;
             }
             img{
                 width:100%;
@@ -58,57 +69,58 @@
     <body>
     	<div class="box">
     		<div class="case">
-    			<a href="">
+    			<a href="anli/taobao/index.html">
     				<img src="img/project/taobao.jpg" alt="" title="淘宝">
                     <p>仿淘宝页面</p>
     			</a>
     		</div>
             <div class="case">
-                <a href="">
+                <a href="anli/huati/index.html">
                     <img src="img/project/huati.png" alt="" title="话题">
                     <p>仿易畅话题页面</p>
                 </a>
             </div>
             <div class="case">
-                <a href="">
+                <a href="anli/FSC/index.html">
                     <img src="img/project/FSC.jpg" alt="">
                     <p>仿FSC官网首页</p>
                 </a>
             </div>
             <div class="case">
-                <a href="">
+                <a href="anli/fenghuangtiyu/index.html">
                     <img src="img/project/fenghuang.jpg" alt="">
                     <p>仿凤凰体育页面</p>
                 </a>
             </div>
             <div class="case">
-                <a href="">
+                <a href="anli/hunjia/index.html">
                     <img src="img/project/hunjia.png" alt="">
                     <p>仿易畅婚嫁页面</p>
                 </a>
             </div>
             <div class="case">
-                <a href="">
+                <a href="anli/wenhua/index.html">
                     <img src="img/project/wenhua.png" alt="">
                     <p>仿文化页面</p>
                 </a>
             </div>
             <div class="case">
-                <a href="">
-                    <img src="img/project/taobao.jpg" alt="">
+                <a href="anli/atech/index.htm">
+                    <img src="img/project/atech.jpg" alt="">
                 </a>
             </div>
             <div class="case">
-                <a href="">
-                    <img src="img/project/taobao.jpg" alt="">
+                <a href="anli/medicine/news.html">
+                    <img src="img/project/medicine.png" alt="">
                 </a>
             </div>
             <div class="case">
-                <a href="">
-                    <img src="img/project/taobao.jpg" alt="">
+                <a href="anli/Freebee_profile/profile.html">
+                    <img src="img/project/Freebee_profile.jpg" alt="">
                 </a>
             </div>
     	</div>
-        <a class="return" href="https://yangyongkang123.github.io/resume/index.html">返回主页</a>
+        <a class="return" href="https://yangyongkang123.github.io/resume/index.html" title="点我可以放回主页哦">返回主页</a>
+        
     </body>
 </html>

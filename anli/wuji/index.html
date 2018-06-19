@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size: 46.875px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="images/ico.ico" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link href="css/m_index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="js/m_index.js.下载"></script>
+    <script>
+        var iscale = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + iscale + ',minimum-scale=' + iscale + ',maximum-scale=' + iscale + '">')
+        var iwidth = document.documentElement.clientWidth;
+        if (iwidth > 1540) {
+            iwidth = 640;
+        }
+        document.getElementsByTagName('html')[0].style.fontSize = iwidth / 16 + 'px';
+        $(function () {
+            setfont();
+
+            function setfont() {
+                var nowfont = $('html').css('fontSize');
+                var oldwidth = document.documentElement.clientWidth;
+                if (oldwidth < 1540) {
+                    var newwidth = oldwidth / 16 + 'px';
+                    if (nowfont != newwidth) {
+                        $('html').css('fontSize', oldwidth / 16 - 6 + 'px');
+                    }
+                }
+            }
+        })
+        window.onload = function () {
+            var iwidth = document.documentElement.clientWidth;
+            var vbottom = document.getElementById("mob_nav");
+            console.log(vbottom);
+            if (iwidth > 1540) {
+                var p_bottom_left = iwidth - 640;
+                vbottom.style.left = p_bottom_left / 2 + 'px';
+            }
+        }
+    </script>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="keywords" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <meta name="description" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <title>无极软件</title>
+</head>
+<body>
+<style>
+    .index_index {
+        width: 16rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .index_index .cont_a {
+        width: 16rem;
+        overflow: hidden;
+    }
+
+    .index_index .cont_a img {
+        width: 100%;
+    }
+
+    .index_index .cont_b {
+        width: 16rem;
+        overflow: hidden;
+    }
+
+    .index_index .cont_b .p1 {
+        color: #333;
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .index_index .cont_b .p2 {
+        color: #888;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .index_index .cont_b a {
+        display: block;
+        width: 8rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        line-height: 1rem;
+        color: #fff;
+        background: #212a32;
+        margin: 1rem auto;
+    }
+
+    .index_index .cont_b .i_a {
+        display: block;
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    .index_index .cont_c {
+        width: 16rem;
+        overflow: hidden;
+        background: #212a32;
+    }
+
+    .index_index .cont_c .p1 {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .index_index .cont_c .p2 {
+        color: #e9e9e9;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .index_index .cont_c a {
+        display: block;
+        width: 8rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        line-height: 1rem;
+        color: #333;
+        background: #fff;
+        margin: 1rem auto;
+    }
+
+    .index_index .cont_c .i_a {
+        display: block;
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+</style>
+<div class="index_index">
+    <div class="cont_a">
+        <img src="images/m_i_cont_a.jpg">
+    </div>
+
+    <div class="cont_b">
+        <img class="i_a" src="images/cont_c_fl.png">
+        <p class="p1">挂机宝 驱动级软件 </p>
+        <p class="p2">专家级防封 虚拟硬件信息 云端自带海量IP. </p>
+        <p class="p2">兼容WinXp ~ Win10 &amp; VMware、VirtualBox</p>
+        <a href="###" class="a1">查看详情 </a>
+    </div>
+
+    <div class="cont_c">
+        <img class="i_a" src="images/cont_d_fr.png">
+        <p class="p1">无极 </p>
+        <p class="p2">提供Android、IOS版本 </p>
+        <p class="p2">完全兼容各种安卓模拟器、真机</p>
+        <p class="p2">流量引流，可选指定城市IP、IP数量200万+ </p>
+        <a href="###">查看详情 </a>
+    </div>
+
+    <div class="cont_b">
+        <img class="i_a" src="images/cont_e_fl.png">
+        <p class="p1">变机宝 </p>
+        <p class="p2">保护隐私 拒绝泄露个人信息 </p>
+        <p class="p2">防止您的隐私信息被第三方软件获取</p>
+        <p class="p2">用户可以一键解决包括一键卸载、清空数据、</p>
+        <p class="p2">备份数据、还原数据、删除等操作.</p>
+        <a href="bjb.html" style="color: #ff5842" class="a1">查看详情 </a>
+    </div>
+
+    <div class="cont_c">
+        <img class="i_a" src="images/cont_f_fr.png">
+        <p class="p1">硬件修改大师 </p>
+        <p class="p2"> 驱动级虚拟，支持多网卡MAC、多硬盘，子进程同步。</p>
+        <p class="p2">兼容WinXP ~ Win10 &amp; VMware、VirtualBox</p>
+        <a href="###">查看详情 </a>
+    </div>
+
+</div>
+
+<style>
+    #mob_nav {
+        width: 16rem;
+        height: 2rem;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    #mob_nav li {
+        float: left;
+        width: 20%;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #mob_nav li i {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+        color: #666;
+    }
+
+    #mob_nav li p {
+        color: #666;
+    }
+</style>
+<div id="mob_nav">
+    <ul class="clear">
+        <a href="index.html">
+            <li>
+                <i class="iconfont p_color_a"> </i>
+                <p class="p_color_a">首页</p></li>
+        </a>
+        <a href="product.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>产品</p></li>
+        </a>
+        <a href="video.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>视频</p></li>
+        </a>
+        <a href="tutorial.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>教程</p></li>
+        </a>
+        <a href="about.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>我们</p></li>
+        </a>
+    </ul>
+</div>
+
+</body>
+</html>

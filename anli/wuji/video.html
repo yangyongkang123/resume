@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size: 46.875px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="images/ico.ico" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link href="css/m_index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="js/m_index.js.下载"></script>
+    <script>
+        var iscale = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + iscale + ',minimum-scale=' + iscale + ',maximum-scale=' + iscale + '">')
+        var iwidth = document.documentElement.clientWidth;
+        if (iwidth > 1540) {
+            iwidth = 640;
+        }
+        document.getElementsByTagName('html')[0].style.fontSize = iwidth / 16 + 'px';
+        $(function () {
+            setfont();
+
+            function setfont() {
+                var nowfont = $('html').css('fontSize');
+                var oldwidth = document.documentElement.clientWidth;
+                if (oldwidth < 1540) {
+                    var newwidth = oldwidth / 16 + 'px';
+                    if (nowfont != newwidth) {
+                        $('html').css('fontSize', oldwidth / 16 - 6 + 'px');
+                    }
+                }
+            }
+        })
+        window.onload = function () {
+            var iwidth = document.documentElement.clientWidth;
+            var vbottom = document.getElementById("mob_nav");
+            console.log(vbottom);
+            if (iwidth > 1540) {
+                var p_bottom_left = iwidth - 640;
+                vbottom.style.left = p_bottom_left / 2 + 'px';
+            }
+        }
+    </script>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="keywords" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <meta name="description" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <title>无极软件</title>
+</head>
+<body>
+<style>
+    .List_video {
+        width: 16rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .List_video .nav {
+        padding: 0.2rem 0;
+    }
+
+    .List_video .nav li {
+        float: left;
+        color: #333;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .List_video .nav li a {
+        color: #333;
+    }
+
+    .List_video .video .t_video {
+        width: 16rem;
+        height: 10rem;
+        background: #000;
+    }
+
+    .List_video .video .p1 {
+        margin: 0.3rem 0.5rem;
+        width: 15rem;
+        height: 1rem;
+        line-height: 1rem;
+    }
+
+    #js_bottom {
+        line-height: 1.8rem;
+        text-align: center;
+        color: #666;
+        border-top: 1px solid #f1f1f1;
+    }
+</style>
+
+<div class="List_video">
+    <div class="nav">
+        <div class="p_scroll_x">
+            <ul class="clear" style="width: 857px;">
+                <li>视频分类 :</li>
+                <li><a href="###" class="p_color_a">全部</a></li>
+                <li><a href="###">挂机宝</a></li>
+                <li><a href="###">无极</a></li>
+                <li><a href="###">变机宝</a></li>
+                <li><a href="###">硬件修改大师</a></li>
+                <li><a href="###">其他</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="video js_count_page" page="1" nid="">
+        <div>
+            <video class="t_video" src="/uploads/video/20180417/5ad5a3b9bd163.mp4" controls="" state="1"
+                   webkit-playsinline="" playsinline="" x5-playsinline="" x-webkit-airplay="allow">
+            </video>
+            <p class="p1 p_font_h1">无极软件 宣传视频 用的好 帮忙转发哦</p>
+        </div>
+    </div>
+
+    <div id="js_bottom"></div>
+</div>
+
+
+<script>
+    $(function () {
+        var gete = true;
+        $(window).scroll(function () {
+            if (gete && $(window).scrollTop() + $(window).height() > $('#js_bottom').offset().top - 200) {
+                gete = false;
+                var page = $('.js_count_page').attr('page');
+                var nid = $('.js_count_page').attr('nid');
+                var data = ajax("/Mobile/List/mvideo.html", {page: page, nid: nid});
+                if (data) {
+                    var more = "";
+                    $.each(data, function (i, v) {
+                        more += '<div><video class="t_video"  src="' + v.mp4 + '" controls state="1"  webkit-playsinline playsinline x5-playsinline x-webkit-airplay="allow">';
+                        more += '</video><p class="p1 p_font_h1">' + v.title + '</p></div>';
+                    });
+                    $('.js_count_page').append(more);
+                    $('.js_count_page').attr('page', Number($('.js_count_page').attr('page')) + 1);
+                    gete = true;
+                } else {
+                    $('#js_bottom').html('没有更多了');
+                }
+            }
+        })
+
+    })
+
+</script>
+
+
+<script>
+    $(function () {
+        $('.video').delegate('.t_video', 'click', function () {
+            if ($(this).attr('state') == 1) {
+                $(this).attr('state', '0');
+                $(this).trigger('play');
+            } else {
+                $(this).attr('state', '1');
+                $(this).trigger('pause');
+            }
+        })
+
+    })
+
+    set_ul_w();
+
+    function set_ul_w() {
+        var ul_w = 1;
+        $('.p_scroll_x ul li').each(function () {
+            ul_w = ul_w + $(this).innerWidth();
+        });
+        $('.p_scroll_x ul').css('width', ul_w + 'px');
+    }
+</script>
+
+<style>
+    #mob_nav {
+        width: 16rem;
+        height: 2rem;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    #mob_nav li {
+        float: left;
+        width: 20%;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #mob_nav li i {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+        color: #666;
+    }
+
+    #mob_nav li p {
+        color: #666;
+    }
+</style>
+<div id="mob_nav">
+    <ul class="clear">
+        <a href="index.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>首页</p></li>
+        </a>
+        <a href="product.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>产品</p></li>
+        </a>
+        <a href="video.html">
+            <li>
+                <i class="iconfont p_color_a"> </i>
+                <p class="p_color_a">视频</p></li>
+        </a>
+        <a href="tutorial.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>教程</p></li>
+        </a>
+        <a href="about.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>我们</p></li>
+        </a>
+    </ul>
+</div>
+
+</body>
+</html>

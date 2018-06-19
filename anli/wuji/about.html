@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size: 46.875px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="images/ico.ico" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link href="css/m_index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="js/m_index.js.下载"></script>
+    <script>
+        var iscale = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + iscale + ',minimum-scale=' + iscale + ',maximum-scale=' + iscale + '">')
+        var iwidth = document.documentElement.clientWidth;
+        if (iwidth > 1540) {
+            iwidth = 640;
+        }
+        document.getElementsByTagName('html')[0].style.fontSize = iwidth / 16 + 'px';
+        $(function () {
+            setfont();
+
+            function setfont() {
+                var nowfont = $('html').css('fontSize');
+                var oldwidth = document.documentElement.clientWidth;
+                if (oldwidth < 1540) {
+                    var newwidth = oldwidth / 16 + 'px';
+                    if (nowfont != newwidth) {
+                        $('html').css('fontSize', oldwidth / 16 - 6 + 'px');
+                    }
+                }
+            }
+        })
+        window.onload = function () {
+            var iwidth = document.documentElement.clientWidth;
+            var vbottom = document.getElementById("mob_nav");
+            console.log(vbottom);
+            if (iwidth > 1540) {
+                var p_bottom_left = iwidth - 640;
+                vbottom.style.left = p_bottom_left / 2 + 'px';
+            }
+        }
+    </script>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <meta name="description" content="无极代理,挂机宝,变机宝,硬件修改大师">
+    <title>无极软件</title>
+</head>
+<body>
+
+<style>
+    .index_about {
+        width: 16rem;
+        margin: 0 auto;
+        padding-bottom: 3.5rem;
+    }
+
+    .index_about .h1 {
+        height: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    .index_about .wx {
+        padding: 0.5rem;
+    }
+
+    .index_about .wx .nav {
+        padding: 0 3.5rem;
+    }
+
+    .index_about .wx .nav img {
+        width: 2.5rem;
+        border-radius: 0.25rem;
+        border: 2px solid #ddd;
+    }
+
+    .index_about .wx .nav .p1 {
+        color: #222;
+        margin: 0.3rem;
+        font-size: 0.6rem;
+    }
+
+    .index_about .wx .nav .p2 {
+        color: #666;
+        margin-left: 0.3rem;
+    }
+
+    .index_about .wx .img {
+        text-align: center;
+    }
+
+    .index_about .wx .img img {
+        width: 12rem;
+    }
+
+    .index_about .wx .p3 {
+        text-align: center;
+    }
+
+    .index_about .tact {
+        padding: 0 0.5rem;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .index_about .tact li {
+        border-bottom: 1px solid #f1f1f1;
+        line-height: 1.5rem;
+        font-size: 0.6rem;
+    }
+
+    .index_about .tact li span {
+        float: left;
+        color: #222;
+    }
+
+    .index_about .tact li i {
+        float: right;
+        color: #666;
+    }
+
+    .index_about .h2 {
+        text-align: center;
+        line-height: 2rem;
+        height: 1rem;
+        margin-top: 0.5rem;
+        color: #777;
+    }
+
+    .index_about .login {
+        padding: 0 1.8rem;
+    }
+
+    .index_about .login a {
+        display: inline-block;
+        width: 6rem;
+        height: 1.3rem;
+        line-height: 1.3rem;
+        margin: 0.5rem 0;
+        border-radius: 0.65rem;
+        text-align: center;
+        color: #fff;
+    }
+</style>
+<div class="index_about">
+    <p class="h1 p_color_back"> 联系我们</p>
+
+
+    <div class="wx">
+        <div class="img"><img src="images/5a7d53b219366.jpg"></div>
+        <div class="p3"> 扫一扫二维码,关注微信公众号</div>
+        <div class="p3"> 或微信搜索公众号 ： wujiruanjian2012</div>
+    </div>
+
+    <div class="login clear">
+        <a class="fl p_color_back" href="#"> 登录后台</a>
+        <a class="fr p_color_back" href="#"> 注册后台</a>
+    </div>
+
+    <div class="tact">
+        <ul>
+            <li class="clear"><span>在线客服 </span> <i> 2852266703</i></li>
+            <li class="clear"><span>售后热线 </span> <i> 18952012758</i></li>
+            <li class="clear"><span>大客户通道 微信/手机 </span> <i> 18921408338</i></li>
+            <li class="clear"><span>邮箱 </span> <i> wujiruanjian@163.com</i></li>
+        </ul>
+
+    </div>
+
+    <div class="h2">江苏南京江宁区将军大道6号 J6软件创意园</div>
+    <div class="h2">苏ICP备15017563号-6</div>
+</div>
+
+
+<style>
+    #mob_nav {
+        width: 16rem;
+        height: 2rem;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    #mob_nav li {
+        float: left;
+        width: 20%;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #mob_nav li i {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+        color: #666;
+    }
+
+    #mob_nav li p {
+        color: #666;
+    }
+</style>
+<div id="mob_nav">
+    <ul class="clear">
+        <a href="index.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>首页</p></li>
+        </a>
+        <a href="product.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>产品</p></li>
+        </a>
+        <a href="video.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>视频</p></li>
+        </a>
+        <a href="tutorial.html">
+            <li>
+                <i class="iconfont"> </i>
+                <p>教程</p></li>
+        </a>
+        <a href="about.html">
+            <li>
+                <i class="iconfont p_color_a"> </i>
+                <p class=" p_color_a">我们</p></li>
+        </a>
+    </ul>
+</div>
+
+</body>
+</html>
